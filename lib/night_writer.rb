@@ -14,3 +14,9 @@ end
 #
 # night writer - in charge of pasting initial input
 # reader - in charge of reading files
+
+# First make it work
+# Then make it pretty
+
+file_contents = File.read(ARGV[0])
+puts "Created '#{ARGV[1]}' containing #{file_contents.length} characters"
