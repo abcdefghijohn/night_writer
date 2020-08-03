@@ -1,0 +1,50 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/johnk/Coding/mod1/projects/nightwriter/lib/night_writer.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnk/Coding/mod1/projects/nightwriter/lib/file_reader.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1596498029
+  }
+}
