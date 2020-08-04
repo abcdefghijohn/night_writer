@@ -10,11 +10,4 @@ class Translator
       dictionary[letter]
     end
   end
-
-  def limit_to_80(input)
-    split = file_contents.scan(/.{1,40}/)
-    split.map do |string|
-      translator.to_braille(string)
-    end.join("\n")
-  end
 end

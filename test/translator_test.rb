@@ -24,18 +24,4 @@ class TranslatorTest < Minitest::Test
                 ["0.", "0.", "0."]]
     assert_equal expected, translator.to_braille("fml")
   end
-
-  def test_it_can_limit_to_80_characters
-    skip
-    translator = Translator.new
-    input = ["000000000000000000000000000000000000000000000000
-              00000000000000000000000000000000.................
-              .................................................
-              .................................."]
-    expected = "0000000000000000000000000000000000000000000000
-                0000000000000000000000000000000000\n...........
-                ...............................................
-                .........................................."
-    assert_equal expected, translator.limit_to_80(input)
-  end
 end

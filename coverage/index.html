@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-04T02:23:29-06:00">2020-08-04T02:23:29-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-08-04T08:18:22-06:00">2020-08-04T08:18:22-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  48.0%
+  52.17%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.48
+         0.52
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>25</b> relevant lines,
+    <b>23</b> relevant lines,
     <span class="green"><b>12</b> lines covered</span> and
-    <span class="red"><b>13</b> lines missed. </span>
+    <span class="red"><b>11</b> lines missed. </span>
     (<span class="red">
-  48.0%
+  52.17%
 </span>
 )
   </div>
@@ -71,9 +71,9 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#0d3cb76636a5190c687c33e3c3f2fcc35e27df29" class="src_link" title="lib/braille_dictionary.rb">lib/braille_dictionary.rb</a></td>
+            <td class="strong t-file__name"><a href="#a3061826b59e005ab1036fb76245e1c6b1c24b79" class="src_link" title="lib/dictionary.rb">lib/dictionary.rb</a></td>
             <td class="red strong cell--number t-file__coverage">75.00 %</td>
-            <td class="cell--number">35</td>
+            <td class="cell--number">34</td>
             <td class="cell--number">4</td>
             <td class="cell--number">3</td>
             <td class="cell--number">1</td>
@@ -93,13 +93,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#6f56ce234571970ab559e42db2b980bd0773fb7d" class="src_link" title="lib/translator_to_english.rb">lib/translator_to_english.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">42.86 %</td>
-            <td class="cell--number">23</td>
-            <td class="cell--number">14</td>
+            <td class="strong t-file__name"><a href="#b78f0ac4c5a5726faf8adbad4e27c97d252038c8" class="src_link" title="lib/translator.rb">lib/translator.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">50.00 %</td>
+            <td class="cell--number">20</td>
+            <td class="cell--number">12</td>
             <td class="cell--number">6</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">0.43</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0.50</td>
             
           </tr>
         
@@ -120,9 +120,9 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="0d3cb76636a5190c687c33e3c3f2fcc35e27df29">
+        <div class="source_table" id="a3061826b59e005ab1036fb76245e1c6b1c24b79">
   <div class="header">
-    <h3>lib/braille_dictionary.rb</h3>
+    <h3>lib/dictionary.rb</h3>
     <h4>
       <span class="red">
   75.0%
@@ -153,7 +153,7 @@
 
             
 
-            <code class="ruby">module BrailleDictionary</code>
+            <code class="ruby">module Dictionary</code>
           </li>
         </div>
       
@@ -164,34 +164,23 @@
 
             
 
-            <code class="ruby">  attr_reader :braille_dictionary</code>
+            <code class="ruby">  attr_reader :dictionary</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
+          <li class="covered" data-hits="1" data-linenumber="3">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def braille_dictionary</code>
+            <code class="ruby">  def dictionary</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="5">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -202,13 +191,24 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="6">
+          <li class="missed" data-hits="0" data-linenumber="5">
             
             
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;..&quot;, &quot;..&quot;] =&gt; &quot;a&quot;,</code>
+            <code class="ruby">          &quot;a&quot; =&gt; [&quot;0.&quot;, &quot;..&quot;, &quot;..&quot;],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">          &quot;b&quot; =&gt; [&quot;0.&quot;, &quot;0.&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -219,7 +219,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;0.&quot;, &quot;..&quot;] =&gt; &quot;b&quot;,</code>
+            <code class="ruby">          &quot;c&quot; =&gt; [&quot;00&quot;, &quot;..&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -230,7 +230,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;..&quot;, &quot;..&quot;] =&gt; &quot;c&quot;,</code>
+            <code class="ruby">          &quot;d&quot; =&gt; [&quot;00&quot;, &quot;.0&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -241,7 +241,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;.0&quot;, &quot;..&quot;] =&gt; &quot;d&quot;,</code>
+            <code class="ruby">          &quot;e&quot; =&gt; [&quot;0.&quot;, &quot;.0&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -252,7 +252,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;.0&quot;, &quot;..&quot;] =&gt; &quot;e&quot;,</code>
+            <code class="ruby">          &quot;f&quot; =&gt; [&quot;00&quot;, &quot;0.&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -263,7 +263,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;0.&quot;, &quot;..&quot;] =&gt; &quot;f&quot;,</code>
+            <code class="ruby">          &quot;g&quot; =&gt; [&quot;00&quot;, &quot;00&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -274,7 +274,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;00&quot;, &quot;..&quot;] =&gt; &quot;g&quot;,</code>
+            <code class="ruby">          &quot;h&quot; =&gt; [&quot;0.&quot;, &quot;00&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -285,7 +285,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;00&quot;, &quot;..&quot;] =&gt; &quot;h&quot;,</code>
+            <code class="ruby">          &quot;i&quot; =&gt; [&quot;.0&quot;, &quot;0.&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -296,7 +296,7 @@
 
             
 
-            <code class="ruby">         [&quot;.0&quot;, &quot;0.&quot;, &quot;..&quot;] =&gt; &quot;i&quot;,</code>
+            <code class="ruby">          &quot;j&quot; =&gt; [&quot;.0&quot;, &quot;00&quot;, &quot;..&quot;],</code>
           </li>
         </div>
       
@@ -307,7 +307,7 @@
 
             
 
-            <code class="ruby">         [&quot;.0&quot;, &quot;00&quot;, &quot;..&quot;] =&gt; &quot;j&quot;,</code>
+            <code class="ruby">          &quot;k&quot; =&gt; [&quot;0.&quot;, &quot;..&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -318,7 +318,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;..&quot;, &quot;0.&quot;] =&gt; &quot;k&quot;,</code>
+            <code class="ruby">          &quot;l&quot; =&gt; [&quot;0.&quot;, &quot;0.&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -329,7 +329,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;0.&quot;, &quot;0.&quot;] =&gt; &quot;l&quot;,</code>
+            <code class="ruby">          &quot;m&quot; =&gt; [&quot;00&quot;, &quot;..&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -340,7 +340,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;..&quot;, &quot;0.&quot;] =&gt; &quot;m&quot;,</code>
+            <code class="ruby">          &quot;n&quot; =&gt; [&quot;00&quot;, &quot;.0&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -351,7 +351,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;.0&quot;, &quot;0.&quot;] =&gt; &quot;n&quot;,</code>
+            <code class="ruby">          &quot;o&quot; =&gt; [&quot;0.&quot;, &quot;.0&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -362,7 +362,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;.0&quot;, &quot;0.&quot;] =&gt; &quot;o&quot;,</code>
+            <code class="ruby">          &quot;p&quot; =&gt; [&quot;00&quot;, &quot;0.&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -373,7 +373,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;0.&quot;, &quot;0.&quot;] =&gt; &quot;p&quot;,</code>
+            <code class="ruby">          &quot;q&quot; =&gt; [&quot;00&quot;, &quot;00&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -384,7 +384,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;00&quot;, &quot;0.&quot;] =&gt; &quot;q&quot;,</code>
+            <code class="ruby">          &quot;r&quot; =&gt; [&quot;0.&quot;, &quot;00&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -395,7 +395,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;00&quot;, &quot;0.&quot;] =&gt; &quot;r&quot;,</code>
+            <code class="ruby">          &quot;s&quot; =&gt; [&quot;.0&quot;, &quot;0.&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -406,7 +406,7 @@
 
             
 
-            <code class="ruby">         [&quot;.0&quot;, &quot;0.&quot;, &quot;0.&quot;] =&gt; &quot;s&quot;,</code>
+            <code class="ruby">          &quot;t&quot; =&gt; [&quot;.0&quot;, &quot;00&quot;, &quot;0.&quot;],</code>
           </li>
         </div>
       
@@ -417,7 +417,7 @@
 
             
 
-            <code class="ruby">         [&quot;.0&quot;, &quot;00&quot;, &quot;0.&quot;] =&gt; &quot;t&quot;,</code>
+            <code class="ruby">          &quot;u&quot; =&gt; [&quot;0.&quot;, &quot;..&quot;, &quot;00&quot;],</code>
           </li>
         </div>
       
@@ -428,7 +428,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;..&quot;, &quot;00&quot;] =&gt; &quot;u&quot;,</code>
+            <code class="ruby">          &quot;v&quot; =&gt; [&quot;0.&quot;, &quot;0.&quot;, &quot;00&quot;],</code>
           </li>
         </div>
       
@@ -439,7 +439,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;0.&quot;, &quot;00&quot;] =&gt; &quot;v&quot;,</code>
+            <code class="ruby">          &quot;w&quot; =&gt; [&quot;.0&quot;, &quot;00&quot;, &quot;.0&quot;],</code>
           </li>
         </div>
       
@@ -450,7 +450,7 @@
 
             
 
-            <code class="ruby">         [&quot;.0&quot;, &quot;00&quot;, &quot;.0&quot;] =&gt; &quot;w&quot;,</code>
+            <code class="ruby">          &quot;x&quot; =&gt; [&quot;00&quot;, &quot;..&quot;, &quot;00&quot;],</code>
           </li>
         </div>
       
@@ -461,7 +461,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;..&quot;, &quot;00&quot;] =&gt; &quot;x&quot;,</code>
+            <code class="ruby">          &quot;y&quot; =&gt; [&quot;00&quot;, &quot;.0&quot;, &quot;00&quot;],</code>
           </li>
         </div>
       
@@ -472,7 +472,7 @@
 
             
 
-            <code class="ruby">         [&quot;00&quot;, &quot;.0&quot;, &quot;00&quot;] =&gt; &quot;y&quot;,</code>
+            <code class="ruby">          &quot;z&quot; =&gt; [&quot;0.&quot;, &quot;.0&quot;, &quot;00&quot;],</code>
           </li>
         </div>
       
@@ -483,7 +483,7 @@
 
             
 
-            <code class="ruby">         [&quot;0.&quot;, &quot;.0&quot;, &quot;00&quot;] =&gt; &quot;z&quot;,</code>
+            <code class="ruby">          &quot; &quot; =&gt; [&quot;..&quot;, &quot;..&quot;, &quot;..&quot;]</code>
           </li>
         </div>
       
@@ -494,7 +494,7 @@
 
             
 
-            <code class="ruby">         [&quot;..&quot;, &quot;..&quot;, &quot;..&quot;] =&gt; &quot; &quot;</code>
+            <code class="ruby">        }</code>
           </li>
         </div>
       
@@ -505,23 +505,12 @@
 
             
 
-            <code class="ruby">       }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="34">
-            
-            
-
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
+          <li class="never" data-hits="" data-linenumber="34">
             
             
 
@@ -710,12 +699,12 @@
 </div>
 
       
-        <div class="source_table" id="6f56ce234571970ab559e42db2b980bd0773fb7d">
+        <div class="source_table" id="b78f0ac4c5a5726faf8adbad4e27c97d252038c8">
   <div class="header">
-    <h3>lib/translator_to_english.rb</h3>
+    <h3>lib/translator.rb</h3>
     <h4>
       <span class="red">
-  42.86%
+  50.0%
 </span>
 
       lines covered
@@ -724,9 +713,9 @@
     
 
     <div class="t-line-summary">
-      <b>14</b> relevant lines.
+      <b>12</b> relevant lines.
       <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>8</b> lines missed.</span>
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
 
     
@@ -743,7 +732,7 @@
 
             
 
-            <code class="ruby">require &#39;./lib/braille_dictionary&#39;</code>
+            <code class="ruby">require &#39;./lib/dictionary&#39;</code>
           </li>
         </div>
       
@@ -776,7 +765,7 @@
 
             
 
-            <code class="ruby">class TranslatorToEnglish</code>
+            <code class="ruby">class Translator</code>
           </li>
         </div>
       
@@ -787,7 +776,7 @@
 
             
 
-            <code class="ruby">  include BrailleDictionary</code>
+            <code class="ruby">  include Dictionary</code>
           </li>
         </div>
       
@@ -809,7 +798,7 @@
 
             
 
-            <code class="ruby">  def decode_one_element(element)</code>
+            <code class="ruby">  def to_braille(message)</code>
           </li>
         </div>
       
@@ -820,7 +809,7 @@
 
             
 
-            <code class="ruby">    braille_array = element.split(&quot;\n&quot;)</code>
+            <code class="ruby">    strings = message.chars</code>
           </li>
         </div>
       
@@ -831,7 +820,7 @@
 
             
 
-            <code class="ruby">      braille_dictionary.select do |braille, letter|</code>
+            <code class="ruby">    strings.map do |letter|</code>
           </li>
         </div>
       
@@ -842,7 +831,7 @@
 
             
 
-            <code class="ruby">        return letter if braille_array == braille</code>
+            <code class="ruby">      dictionary[letter]</code>
           </li>
         </div>
       
@@ -853,7 +842,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -886,7 +875,7 @@
 
             
 
-            <code class="ruby">  def to_english(braille_element)</code>
+            <code class="ruby">  def limit_to_80(input)</code>
           </li>
         </div>
       
@@ -897,7 +886,7 @@
 
             
 
-            <code class="ruby">    english = []</code>
+            <code class="ruby">    split = @reader.read.scan(/.{1,40}/)</code>
           </li>
         </div>
       
@@ -908,7 +897,7 @@
 
             
 
-            <code class="ruby">     braille_element.each do |element|</code>
+            <code class="ruby">    split.map do |string|</code>
           </li>
         </div>
       
@@ -919,18 +908,18 @@
 
             
 
-            <code class="ruby">       braille_dictionary.each do |braille, letter|</code>
+            <code class="ruby">      translator.to_braille(string)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="18">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
             
 
-            <code class="ruby">       english &lt;&lt; letter if element == braille</code>
+            <code class="ruby">    end.join(&quot;\n&quot;)</code>
           </li>
         </div>
       
@@ -941,45 +930,12 @@
 
             
 
-            <code class="ruby">       end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby">     end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="21">
-            
-            
-
-            
-
-            <code class="ruby">     english.join</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
-            
-
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="23">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
