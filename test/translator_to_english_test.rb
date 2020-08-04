@@ -19,6 +19,14 @@ class TranslatorToEnglishTest < Minitest::Test
     assert_equal expected, translated.split_braille(input)
   end
 
+  def test_it_can_return_first_element_of_braille_characters
+    translated = TranslatorToEnglish.new
+    input = ["0.0...00....", "00.00.0..0", "000...0000.."]
+    expected = ["0.", "0.", "..", "00", "..", ".."]
+
+    assert_equal expected, translated.get_first_element(input)
+  end
+
   def test_it_can_decode_a_braille_element_to_a_letter
     skip
     translated = TranslatorToEnglish.new
