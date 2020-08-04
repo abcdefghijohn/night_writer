@@ -10,7 +10,6 @@ split.map do |string|
 translation = translator.to_braille(string)
 file.write(ARGV[1], translation)
 end.join("\n")
-# translation = translator.to_braille(file_contents)
 
 
 p "Created '#{ARGV[1]}' containing #{file_contents.length} characters"
