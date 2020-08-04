@@ -4,11 +4,20 @@
       "/Users/johnk/Coding/mod1/projects/nightwriter/lib/translator.rb": {
         "lines": [
           1,
-          null,
-          1,
           1,
           null,
           1,
+          1,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
           0,
           0,
           null,
@@ -53,8 +62,29 @@
           null,
           null
         ]
+      },
+      "/Users/johnk/Coding/mod1/projects/nightwriter/lib/file_reader.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1596500920
+    "timestamp": 1596517468
   }
 }

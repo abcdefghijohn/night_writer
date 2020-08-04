@@ -18,9 +18,4 @@ class NightWriterTest < MiniTest::Test
   def test_it_exists
     assert_instance_of NightWriter, @night_writer
   end
-
-  def test_it_can_display_initial_message
-    expected = expected = "Created 'braille.txt' containing 256 characters"
-    assert_equal expected, @night_writer.initial_message
-  end
 end

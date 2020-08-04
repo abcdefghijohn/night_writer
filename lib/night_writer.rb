@@ -1,16 +1,14 @@
 require './lib/file_reader'
+require './lib/translator'
 
-class NightWriter
+file = FileReader.new
+translator = Translator.new
 
-  def initialize(input_file, output_file)
-    @reader = FileReader.new
-    @input_file = @reader.read
-    @output_file = output_file
-    initial_message
-  end
+file_contents = file.read(ARGV[0])
 
-  def initial_message
-    # file_contents = File.read(ARGV[0])
-    "Created '#{@output_file}' containing #{@input_file.length} characters"
-  end
-end
+output = file.write(ARGV[1], translation)
+# end.join("\n")
+# translation = translator.to_braille(file_contents)
+
+
+p "Created '#{ARGV[1]}' containing #{file_contents.length} characters"
