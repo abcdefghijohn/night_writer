@@ -6,6 +6,6 @@ class Translator
   def to_braille(char)
     char.map do |letter|
     dictionary[letter]
-  end 
+  end
   end
 end
