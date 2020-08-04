@@ -16,4 +16,12 @@ class TranslatorTest < Minitest::Test
     expected = [["0.", "..", ".."]]
     assert_equal expected, translator.to_braille(["a"])
   end
+
+  def test_it_can_encode_multiple_letters_to_braille
+    translator = Translator.new
+    expected = [["00", "0.", ".."],
+                ["00", "..", "0."],
+                ["0.", "0.", "0."]]
+    assert_equal expected, translator.to_braille(["f", "m", "l"])
+  end
 end
