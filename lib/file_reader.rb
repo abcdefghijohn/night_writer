@@ -5,10 +5,6 @@ class FileReader
   end
 
   def write(output_file, content)
-    File.write(output_file, content)
-  end
-
-  def write(output_file, content)
     rows = content.transpose
     rows.each do |row|
       File.write(output_file, row.join("") + "\n", mode: "a")
