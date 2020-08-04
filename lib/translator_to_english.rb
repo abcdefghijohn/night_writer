@@ -4,18 +4,20 @@ require './lib/file_reader'
 class TranslatorToEnglish
   include BrailleDictionary
 
-#   def split_braille(message)
-#     length = message.length / 3
-#     message.scan(/.{1,#{length}}/)
-#   end
-#
-#   def get_first_element(input)
-#     input.fetch(0).scan(/.{1,2}/)
-#   end
   def decode_one_element(element)
-    braille_array = input.split("\n")
+    braille_array = element.split("\n")
     braille_dictionary.select do |braille, letter|
     return letter if braille_array == braille
     end
+  end
+
+  def to_english(braille_chars)
+    english = []
+    braille_chars.each do |braille_char|
+    braille_dictionary.each do |braille, letter|
+    english << letter if braille_chars == braille
+    end
+    end
+    english.join
   end
 end
